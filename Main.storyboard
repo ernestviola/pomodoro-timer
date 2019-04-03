@@ -687,9 +687,11 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="saW-Ou-Ppf">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="saW-Ou-Ppf">
                                 <rect key="frame" x="106" y="231" width="356" height="17"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="mPI-Pd-XLC"/>
+                                </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="zrz-bm-xHO">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -699,6 +701,9 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="qOT-Zy-kOs" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="EvB-Qz-yyi"/>
+                            <constraint firstAttribute="trailing" secondItem="saW-Ou-Ppf" secondAttribute="trailing" constant="20" id="VvJ-YI-BRt"/>
+                            <constraint firstItem="saW-Ou-Ppf" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="22" id="XsS-SN-2pi"/>
+                            <constraint firstItem="saW-Ou-Ppf" firstAttribute="leading" secondItem="qOT-Zy-kOs" secondAttribute="trailing" constant="8" id="dkk-Gc-YHt"/>
                             <constraint firstItem="qOT-Zy-kOs" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="dur-4i-EWH"/>
                         </constraints>
                     </view>
