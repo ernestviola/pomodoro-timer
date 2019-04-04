@@ -686,6 +686,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="ClickedButton:" target="XfG-lQ-9wD" id="FdT-ri-cBD"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="saW-Ou-Ppf">
                                 <rect key="frame" x="106" y="231" width="356" height="17"/>
@@ -707,6 +710,9 @@
                             <constraint firstItem="qOT-Zy-kOs" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="dur-4i-EWH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ClickedLabel" destination="saW-Ou-Ppf" id="mPs-QH-c0f"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
