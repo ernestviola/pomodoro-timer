@@ -7,6 +7,7 @@ namespace pomodorotimer
 {
     public partial class ViewController : NSViewController
     {
+        private int numberOfClicks = 0;
         public ViewController(IntPtr handle) : base(handle)
         {
         }
@@ -14,6 +15,10 @@ namespace pomodorotimer
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+
+            ClickedLabel.StringValue = "Button has not been pressed";
+
 
             // Do any additional setup after loading the view.
         }
@@ -29,6 +34,12 @@ namespace pomodorotimer
                 base.RepresentedObject = value;
                 // Update the view, if already loaded.
             }
+        }
+
+        partial void ClickedButton(NSObject sender)
+        {
+            ClickedLabel.StringValue = string.Format("The button" +
+            	"has been clicked {0} time{1}",++numberOfClicks,(numberOfClicks < 2) ? "" : "s");
         }
     }
 }
